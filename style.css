@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #81d3e6;
+    --card: #e7f8fc;
+    --text: #1c0b45;
+    --button: #4697d8;
+    --button-hover: #214A9C;
+}
+
+body.dark {
+    --background: #16232F;
+    --card: #243847;
+    --text: #FFFFFF;
+    --button: #4ea8de;
+    --button-hover: #77C8FF;
+}
+
+body {
+    font-family:'Arial Narrow Bold', sans-serif;
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+    transition: .3s;
+}
+
+.theme-btn {
+    position: absolute;
+    top:6px;
+    right: 40px;
+    max-width: 120px;
+    max-height: 40px;
+    padding: 10px 18px;
+}
+
+form {
+    background: var(--card);
+    color: var(--text);
+    padding: 30px;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 580px;
+    max-height: 600px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px #00000033;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--button);
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #D4D4D4;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    background: var(--button);
+    color: #FFFFFF;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: .3s;
+}
+
+button:hover {
+    background: var(--button-hover);
+}
+
+footer {
+    margin-top: 20px;
+    color: var(--text);
+    font-size: 10px;
+    text-align: center;
+}

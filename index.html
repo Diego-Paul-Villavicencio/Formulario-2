@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Claro Oscuro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="themeToggle" class="theme-btn">
+        Modo oscuro
+    </button>
+
+    <form id="userForm">
+
+        <h1>USUARIOS</h1>
+
+        <label for="name">
+            Nombre:
+        </label>
+
+        <input
+            id="name"
+            type="text"
+            placeholder="Ingrese su nombre"
+            required
+        >
+
+        <label for="document">
+            Tipo de documento:
+        </label>
+
+        <select id="document" required>
+            <option value="">Seleccione:</option>
+            <option value="Cédula">Cédula</option>
+            <option value="RUC">RUC</option>
+        </select>
+
+        <label for="documentNumber">
+            Número de documento:
+        </label>
+
+        <input
+            id="documentNumber"
+            type="text"
+            placeholder="Ingrese el número del documento"
+            required
+        >
+
+        <label for="city">
+            Ciudad:
+        </label>
+
+        <select id="city" required>
+            <option value="">Seleccione:</option>
+            <option value="Catamayo">Catamayo</option>
+            <option value="Loja">Loja</option>
+            <option value="Cuenca">Cuenca</option>
+        </select>
+
+        <label for="phone">
+            Número de contacto:
+        </label>
+
+        <input
+            id="phone"
+            type="tel"
+            placeholder="0999999999"
+            required
+        >
+
+        <button type="submit">
+            Guardar Usuario
+        </button>
+
+    </form>
+
+    <script src="main.js"></script>
+
+</body>
+
+<footer>
+    Sitio creado por: <strong>Diego Paúl Villavicencio Ordóñez, 2026</strong>
+</footer>
+
+</html>
